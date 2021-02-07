@@ -35,7 +35,7 @@ contract ZombieFeeding is ZombieFactory{
     }
 
     function _feedAndMultiply(uint _zombieId, uint _targetDna, string memory _species) internal {
-        require(zombieToOwner[_zombieId] == msg.sender); // the caller must own the zombie
+        require(msg.sender == zombieToOwner[_zombieId]); // the caller must own the zombie
 
         Zombie storage myZombie = zombies[_zombieId];
         require(_isReady(myZombie));
