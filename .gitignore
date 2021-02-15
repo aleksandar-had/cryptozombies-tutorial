@@ -25,7 +25,7 @@ local.properties
 # PyDev specific (Python IDE for Eclipse)
 *.pydevproject
 
-# CDT-specific (C/C++ Development Tooling)
+# CDT-specific (C/C.add(1) Development Tooling)
 .cproject
 
 # Java annotation processor (APT)
